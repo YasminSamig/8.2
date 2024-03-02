@@ -1,0 +1,90 @@
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+        Algs alg = new Algs();
+        String[][] gen = {{"Hello,", "world", "!"} ,{"It's", "me", "Genevieve"}};
+        String[][] pics = {{"Yasmin", "Leyla", "Gulya"}, {"Diyora", "Adri", "Isa"}};
+        String[][] objects = {{"bottle", "water", "cup", "dish"}, {"paper", "book", "sheet", "candle"}};
+        int [][] test2 = {{1, 2},{3, 4}};
+        int [][] test3 = {{3, 2, 1}, {4, 5, 6}};
+        String[][] test4 = {{"Hello,", "world", "!"}, {"It's", "me", "Margaret"}};
+        int [][] test5 = {{2, 3, 4}, {-1, -2, -3}};
+        int [][] test6 = {{1, 2, 3}, {4, 5, 6}};
+        double [][] test7 = {{1.6, 3.2, 5.4}, {6.3, 4.1, 2.5}};
+        double[][] a = {{2.3,4.5,21.6}, {2.6,3.4,5.6}};
+        double[][] t = {{1.4,2.5,6.7}, {4.6,8.4,8.9}};
+        int[][] test8 = {{1, 2}, {3, 2}};
+        String [][] test9 = {{"bravo", "charlie"}, {"zebra", "alpha"}};
+        System.out.println(alg.radish(gen, "e"));
+        System.out.println(alg.radish(pics, "a"));
+        System.out.println(alg.radish(objects, "o"));
+        System.out.println();
+
+        System.out.println(alg.cabbage(test2, 5));
+        System.out.println(alg.cabbage(test3, 1));
+        System.out.println(alg.cabbage(test5, -1));
+        System.out.println();
+
+        System.out.println(Arrays.toString(alg.blahhh(test2, 3)));
+        System.out.println(Arrays.toString(alg.blahhh(test3, 7)));
+        System.out.println(Arrays.toString(alg.blahhh(test6, 2)));
+        System.out.println();
+
+        System.out.println(Arrays.toString(alg.dogs(test2)));
+        System.out.println(Arrays.toString(alg.dogs(test6)));
+        System.out.println(Arrays.toString(alg.dogs(test8)));
+        System.out.println();
+
+        System.out.println(alg.papers(test4, 1));
+        System.out.println(alg.papers(pics, 0));
+        System.out.println(alg.papers(objects, 2));
+        System.out.println();
+
+        System.out.println(alg.water(test3));
+        System.out.println(alg.water(test2));
+        System.out.println(alg.water(test6));
+        System.out.println();
+
+        System.out.println(alg.magnet(test3));
+        System.out.println(alg.magnet(test2));
+        System.out.println(alg.magnet(test6));
+        System.out.println();
+
+        System.out.println(alg.pictures(test4));
+        System.out.println(alg.pictures(objects));
+        System.out.println(alg.pictures(pics));
+        System.out.println();
+
+        System.out.println(alg.bike(test4));
+        System.out.println(alg.bike(objects));
+        System.out.println(alg.bike(pics));
+        System.out.println();
+
+        System.out.println(alg.absol(test5, test6));
+        System.out.println(alg.absol(test8, test2));
+        System.out.println(alg.absol(test3, test6));
+        System.out.println();
+
+        System.out.println(alg.mean(test7));
+        System.out.println(alg.mean(a));
+        System.out.println(alg.mean(t));
+        System.out.println();
+
+        System.out.println(alg.equiv(test8));
+        System.out.println(alg.equiv(test6));
+        System.out.println(alg.equiv(test5));
+        System.out.println();
+
+        System.out.println(alg.alpha(test9));
+        System.out.println(alg.alpha(objects));
+        System.out.println(alg.alpha(pics));
+        System.out.println();
+
+    }
+}
+
+
+
+
