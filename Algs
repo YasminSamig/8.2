@@ -1,0 +1,151 @@
+public class Algs {
+    public int radish(String[][] rad, String ish){
+        int x = 0;
+        for(String[] r: rad){
+            for(String c:r){
+                if (c.toLowerCase().contains(ish)) x++;
+            }
+        }
+        return x;
+    }
+
+    public boolean cabbage(int[][] cab, int bage){
+        for(int[] r: cab){
+            for(int c:r){
+                if (c==bage) return true;
+            }
+        }
+        return false;
+    }
+
+
+    public int[] blahhh(int[][] x, int y){
+        int[] blahh = {-1, -1};
+        for(int r = 0; r<x.length; r++){
+            for(int c= 0; c<x[0].length; c++){
+                if (x[r][c] == y) blahh = new int[]{r, c};
+            }
+        }
+        return blahh;
+    }
+
+
+    public int [] dogs(int [][] x){
+        int [] doggyy = new int[x.length];
+        int c = 0;
+        for (int i = 0; i<x.length; i++){
+            doggyy[i] = x[i][c];
+            c++;
+        }
+        return doggyy;
+    }
+
+    public String papers (String[][] x, int y){
+        String pen = "";
+        for(int i = 0; i<x.length; i++){
+            pen+= x[i][y] + " ";
+        }
+        return pen;
+    }
+
+    public int water (int [][] x){
+        int bottle = Integer.MIN_VALUE;
+        for(int r = 0; r<x.length; r++){
+            for(int c = 0; c<x[0].length; c++){
+                if(bottle < x[r][c]) {
+                    bottle = x[r][c];
+                }
+
+            }
+        }
+        return bottle;
+    }
+
+    public int magnet (int [][] x){
+        int bottle = Integer.MAX_VALUE;
+        for(int r = 0; r<x.length; r++){
+            for(int c = 0; c<x[0].length; c++){
+                if(bottle > x[r][c]) {
+                    bottle = x[r][c];
+                }
+
+            }
+        }
+        return bottle;
+    }
+
+    public String pictures (String [][] x){
+        String bottle = x[0][0];
+        for(int r = 0; r<x.length; r++){
+            for(int c = 0; c<x[0].length; c++){
+                if(bottle.length() > x[r][c].length()) {
+                    bottle = x[r][c];
+                }
+            }
+        }
+        return bottle;
+    }
+
+    public String bike (String [][] x){
+        String bottle = x[0][0];
+        for(int r = 0; r<x.length; r++){
+            for(int c = 0; c<x[0].length; c++){
+                if(bottle.length() < x[r][c].length()) {
+                    bottle = x[r][c];
+                }
+            }
+        }
+        return bottle;
+    }
+
+    public int absol(int[][] x, int [][] y){
+        int hghg = Integer.MIN_VALUE;
+        for(int i = 0; i<x.length; i++){
+            for(int c = 0; c<x[0].length; c++){
+                if (Math.abs(x[i][c] - y[i][c]) > hghg) hghg =Math.abs(x[i][c] - y[i][c]);
+            }
+        }
+        return hghg;
+    }
+
+    public double mean (double[][] x){
+        int y = x.length*x[0].length;
+        double p = 0;
+        for(int r = 0; r<x.length; r++){
+            for(int c = 0; c<x[0].length; c++){
+                p+=x[r][c];
+            }
+        }
+        return p/y;
+    }
+
+    public boolean equiv(int[][] x){
+        for (int i = 0; i < x.length; i++) {
+            for (int j = 0; j < x[i].length; j++) {
+                int value = x[i][j];
+                for (int k = i; k < x.length; k++) {
+                    for (int l = (k == i ? j + 1 : 0); l < x[k].length; l++) {
+                        if (x[k][l] == value) {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    public String alpha(String[][] x){
+        String y = "a";
+        for(int r = 0; r<x.length; r++){
+            for(int c = 0; c<x[0].length; c++){
+                if (x[r][c].compareToIgnoreCase(y) > 0) {
+                    y = x[r][c];
+                }
+            }
+        }
+        return y;
+    }
+}
+
+
